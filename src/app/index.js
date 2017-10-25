@@ -6,12 +6,14 @@ import {Home} from "./components/Home";
 
 
 class App extends React.Component { 
-    
+    onGreet() {
+        alert("Hello!");
+    }
     render(){ 
         return (
                 <div className="container">
                  <Header homeLink="betrLearn"/>
-                 <Home name={"Dhruv"} initialAge={19}/>
+                 <Home name={"Dhruv"} initialAge={19} greet={this.onGreet}/>
                 </div>
        ); 
     } 
