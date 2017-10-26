@@ -27,17 +27,17 @@ export class Home extends React.Component {
 
 	render(){
 		return(
-			<div>
-			<p>We learn to Serve humanity</p>
-			<p>Founder {this.props.name}({this.state.age})</p>
-			<p>Status: {this.state.status}</p>
-			<hr/>
-			<button onClick={this.onMakeOlder.bind(this)} className="btn btn-primary">Make me older!</button>
-			<hr/>
-			<button onClick={this.props.greet} className="btn btn-primary">Greet</button>
-			<hr/>
-            <button onClick={this.onChangeLink.bind(this)} className="btn btn-primary">Change header link</button>
-			</div>
+			  <div>
+			  <p>We learn to Serve humanity</p>
+			  <p>Founder {this.props.name}({this.state.age})</p>
+			  <p>Status: {this.state.status}</p>
+			  <hr/>
+			  <button onClick={this.onMakeOlder.bind(this)} className="btn btn-primary">Make me older!</button>
+			  <hr/>
+			  <button onClick={this.props.greet} className="btn btn-primary">Greet</button>
+			  <hr/>
+              <button onClick={this.onChangeLink.bind(this)} className="btn btn-primary">Change header link</button>
+			  </div>
 	    );
 	}
 }
